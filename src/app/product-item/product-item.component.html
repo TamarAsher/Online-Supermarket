@@ -1,0 +1,11 @@
+<img [src]='product.img' class="card-img-top product_img" alt="...">
+<div class="card-body">
+  <p class="card-text product_p">{{product.product_name}}</p>
+  <p class="card-text product_p">Price per KG: {{product.price}}$</p>
+  <div *ngIf="!manager" class="card-text product_p">
+    Quantity: <input id="qua" type="number" [(ngModel)]="product.quantity" >
+   </div>
+  <button id="edit" *ngIf="manager" type="submit" class="btn_product btn btn-primary" (click)="edit()"><mat-icon class="icon">edit</mat-icon></button>
+  <button id="add" *ngIf="!manager && !done" type="submit" class="btn_product btn btn-primary" (click)="add()"><mat-icon class="icon">add_shopping_cart</mat-icon></button>
+  <button *ngIf="!manager && done" id="done" type="submit" class="btn_product btn btn-primary" ><mat-icon class="icon">done</mat-icon></button>
+

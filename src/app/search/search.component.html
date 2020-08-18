@@ -1,0 +1,6 @@
+<div *ngIf="!show_message" class="container_products" >
+    <div *ngFor="let product of products" class="card card_product" style="width: 18rem;" >
+      <app-product-item  [product]="product" > </app-product-item>
+    </div>
+</div>
+<div id="message" *ngIf="show_message">No results matching your search.</div>

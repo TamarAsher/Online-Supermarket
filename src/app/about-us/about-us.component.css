@@ -1,0 +1,32 @@
+
+.list_reasons:hover{
+    color: rgb(248, 171, 223);
+    font-weight: bold;
+}
+.list_reasons{
+    font-weight: bold;
+    background-color: transparent;
+    cursor: default;
+    list-style-type: none;
+    margin: 5px;
+}
+/* .list_container{
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shopping-bag-full-of-fresh-vegetables-and-fruits-royalty-free-image-1128687123-1564523576.jpg?crop=0.669xw:1.00xh;0.300xw,0&resize=640:*);
+    background-repeat: no-repeat;
+    background-size: 50%;
+} */
+img{
+    width:25vw;
+    border: 3px solid #fdf6fc;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px; 
+}
+.icon{
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+}
+h3{
+    margin-top: 10px;
+}

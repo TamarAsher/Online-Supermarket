@@ -1,0 +1,61 @@
+<div class="container con_form">
+    <div class="row">
+      <div class="col" *ngIf="first_step">
+        <form>
+            <div class="form-group input_div">
+                <label for="customer_id">ID:</label>
+                <input type="number" class="form-control" id="customer_id" [(ngModel)]="newCustomer.customer_id" (keyup)="onKeyID()" [ngModelOptions]="{standalone: true}" >
+                <span *ngIf="errors && errors.customer_id">{{errors.customer_id}}</span>
+              </div>
+            <div class="form-group input_div">
+              <label for="mail">Email address:</label>
+              <input type="email" class="form-control" id="mail" aria-describedby="emailHelp" [(ngModel)]="newCustomer.mail" (keyup)="onKeyIDMail()" [ngModelOptions]="{standalone: true}">
+              <span *ngIf="errors && errors.mail">{{errors.mail}}</span>
+            </div>
+            <div class="form-group input_div">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" id="password" [(ngModel)]="newCustomer.password" (keyup)="onKeyFPass()" [ngModelOptions]="{standalone: true}">
+              <span *ngIf="errors && errors.password">{{errors.password}}</span>
+            </div>
+            <div class="form-group input_div">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirm_password" [(ngModel)]="newCustomer.repeat_password" (keyup)="onKeyLPass()" [ngModelOptions]="{standalone: true}">
+                <span *ngIf="errors && errors.repeat_password">{{errors.repeat_password}}</span>
+            </div>
+            <div id="btn_con">
+              <mat-icon id="icon" (click)="onCon()">arrow_right_alt</mat-icon>
+            </div>
+            
+          </form>
+      </div>
+      <div class="col" *ngIf="second_step">  
+        <form>
+
+        
+            <div class="form-group input_div">
+              <label for="city">City:</label> 
+              <select class="custom-select" id="city" [(ngModel)]="newCustomer.city" [ngModelOptions]="{standalone: true}">
+                <option [value]="-1"  selected="selected">Select Your City</option>
+                <option *ngFor="let city of cities" [value]="city.cityId">{{city.city_name}}</option>
+              </select>
+              <span *ngIf="errors && errors.city">{{errors.city}}</span>
+            </div> 
+            <div class="form-group input_div">
+              <label for="street">Street:</label>
+              <input type="text" class="form-control" id="street" [(ngModel)]="newCustomer.street" [ngModelOptions]="{standalone: true}">
+              <span *ngIf="errors && errors.street">{{errors.street}}</span>
+            </div>
+            <div class="form-group">
+              <label for="first_name">First Name:</label>
+              <input type="text" class="form-control" id="first_name" [(ngModel)]="newCustomer.first_name" [ngModelOptions]="{standalone: true}">
+              <span *ngIf="errors && errors.first_name">{{errors.first_name}}</span>
+            </div>
+            <div class="form-group input_div">
+              <label for="last_name">Last Name:</label>
+              <input type="text" class="form-control" id="last_name" [(ngModel)]="newCustomer.last_name" [ngModelOptions]="{standalone: true}">
+              <span *ngIf="errors && errors.last_name">{{errors.last_name}}</span>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn" (click)="onAdd()">Submit</button>
+          </form>
+      </div>
+    </div>

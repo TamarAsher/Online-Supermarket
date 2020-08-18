@@ -1,0 +1,76 @@
+.container_products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.card_product{
+    margin: 10px;
+}
+#edit, #add{
+    background-color: rgb(248, 171, 223);
+    border: 1px solid rgb(248, 171, 223);
+}
+#edit:hover, #add:hover{
+   background-color: #f5cae7;
+   border: 1px solid #ffe9f8;
+}
+#edit:focus, #add:focus{
+    outline: none;
+    box-shadow: none;
+    background-color: #f5cae7;
+    border: 1px solid #ffe9f8;
+}
+.product_img{
+    width: 220px;
+    height: 220px;
+    margin: 10%;
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.icon{
+    font-size: 30px;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+.product_p{
+    font-weight: bold;
+    margin: 0px;
+}
+#qua{
+    width: 35px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+}
+#done{
+    background-color: rgb(98, 198, 98);
+    border: 1px solid rgb(126, 255, 126);
+}
+

@@ -1,0 +1,26 @@
+<nav id="nav" class="navbar navbar-light" style="background-color: #ffe9f8;">
+ 
+  <div id="search_con">
+     <a class="navbar-brand" href="#" id="icon_name">
+    <mat-icon id="icon">shopping_cart</mat-icon>
+    Online-Supermarket
+  </a>
+
+  <form *ngIf="isLogin" id="search" class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search a product" id="inputSearch" aria-label="Search" [(ngModel)]="search" [ngModelOptions]="{standalone: true}">
+    <button class="btn btn-outline-success my-2 my-sm-0" id="btnSearch" type="submit" (click)="searchProducts()">Search</button>
+  </form>
+
+  </div>
+  <div>
+    <span class="navbar-text" id="contact">
+      Contact(online_supermarket@gmail.com, *1212) <br>
+      <span id="hello">Hello <b>{{user}}</b></span>
+    </span> 
+    <button *ngIf="isLogin" class="btn btn-outline-success my-2 my-sm-0" id="btnLogout" type="submit" (click)="logout()">Logout</button>
+  </div>
+    
+
+</nav>
+
+<router-outlet></router-outlet>

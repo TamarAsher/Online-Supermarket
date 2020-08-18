@@ -1,0 +1,23 @@
+<nav >
+    <div class="nav nav-tabs justify-content-end nav_container" id="nav-tab" role="tablist">
+      <mat-icon *ngIf="!manager" class="navbar-brand" id="icon" (click)="goCart()">shopping_cart</mat-icon>
+      <button *ngIf="manager" class="btn btn-outline-success my-2 my-sm-0" (click)="addProduct()" id="btnAdd" type="submit">Add Product</button>
+
+      <a class="nav-item nav-link category"  data-toggle="tab" routerLinkActive="active"  routerLink="fruitsAndVagetables" role="tab" aria-controls="nav-fruits" aria-selected="false" (click)="hideSearch()">Friuts & vegetables</a>
+      <a class="nav-item nav-link category "  data-toggle="tab" routerLinkActive="active"  routerLink="dairyProductsAndEggs" role="tab" aria-controls="nav-dairy" aria-selected="false" (click)="hideSearch()">Dairy Products & eggs</a>
+      <a class="nav-item nav-link category"  data-toggle="tab" routerLinkActive="active"  routerLink="bakeryAndBread" role="tab" aria-controls="nav-bakery" aria-selected="false" (click)="hideSearch()">Bakery & Bread</a>
+      <a class="nav-item nav-link category"  data-toggle="tab" routerLinkActive="active"  routerLink="meatChickenFish" role="tab" aria-controls="nav-meat" aria-selected="false" (click)="hideSearch()">Meat & Chicken & Fish</a>
+      <a class="nav-item nav-link category"  data-toggle="tab" routerLinkActive="active"   routerLink="drinksAndWine" role="tab" aria-controls="nav-drinks" aria-selected="true" (click)="hideSearch()">Drinks & Wine</a>
+    </div>
+</nav>
+  
+
+<div class="products_cart">
+  <app-cart *ngIf="display" id="cart"></app-cart>
+  <app-edit-product [productToEdit]="productToEdit" *ngIf="edit" id="cart"></app-edit-product>
+  <app-add-product *ngIf="add" id="cart"></app-add-product>
+  <div class="router_container">
+  <router-outlet></router-outlet>
+</div>
+</div>
+  

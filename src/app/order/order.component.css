@@ -1,0 +1,92 @@
+.order_container{
+    display: flex;
+}
+.card_order{
+    margin: 10px;
+    width: 50%;
+    height: 600px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color: rgb(66, 66, 66);
+}
+.product_cart{
+    width: 100%;
+    height: auto;
+}
+img{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+.details h5{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.details p{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.products_container{
+    height: 400px;
+    overflow-y: auto;
+}
+input:focus, select:focus{
+    outline: none;
+    box-shadow: none;
+    border: 2px solid rgb(197, 197, 197);
+}
+
+#btn{
+    background-color: rgb(248, 171, 223);
+    border: 1px solid rgb(248, 171, 223);
+}
+#btn:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(248, 171, 223);
+}
+#btn:hover{
+   background-color: #f5cae7;
+   border: 1px solid #ffe9f8;
+}
+span{
+    color: red;
+    font-weight: bold;
+}
+#search{
+    margin-left: 20px;
+}
+
+#btnSearch{
+    padding: 4px;
+    font-size: 13px;
+    background-color:rgb(119, 119, 119);
+    border: 1px solid rgb(119, 119, 119);
+    color: white;
+}
+#btnSearch:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(173, 173, 173);
+}
+#btnSearch:hover{
+    background-color:rgb(173, 173, 173);
+    border: 1px solid rgb(173, 173, 173);
+}
+#inputSearch{
+    width: 150px;
+    height: 30px;
+    font-size: 13px;
+}
+#inputSearch:focus{
+    outline: none;
+    box-shadow: none;
+}

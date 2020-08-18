@@ -1,0 +1,43 @@
+#start{
+background-color: rgb(248, 171, 223);
+   border: 1px solid rgb(248, 171, 223);
+   margin-left: 50px;
+   margin-top: 10px;
+}
+#start:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(248, 171, 223);
+}
+#start:hover{
+    background-color: #f5cae7;
+    border: 1px solid #ffe9f8;
+ }
+#form{
+    padding: 30px;
+}
+#btn_login{
+   background-color: rgb(248, 171, 223);
+   border: 1px solid rgb(248, 171, 223);
+}
+#btn_login:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(248, 171, 223);
+ }
+ #btn_login:hover{
+    background-color: #f5cae7;
+    border: 1px solid #ffe9f8;
+ }
+#sign_up{
+    color:rgb(248, 171, 223);
+}
+
+ span{
+    color: red;
+    font-weight: bold;
+}
+input:focus{
+    outline: none;
+    box-shadow: none;
+}

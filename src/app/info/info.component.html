@@ -1,0 +1,29 @@
+<img src="assets/images/fresh1.jpg" alt="">
+<p>
+  Available products in our store: {{products_num}}
+</p>
+<p>
+  Number of orders submitted in our store: {{orders_num}}
+</p>
+
+
+<div *ngIf="isLogin">
+  <div class="message" *ngIf="open_cart">
+  You have an active cart:
+  <br>
+  <p>
+    {{date |  date : "dd.MM.y" }}
+    <br>
+    price: {{total_price}}$
+  </p>
+  </div>
+  <div class="message" *ngIf="last_purchase">
+   <h4> Your last purchase:</h4>
+    order date: {{last.order_date | date : "dd.MM.y" }}<br>
+    shipping date: {{last.shipping_date |date : "dd.MM.y" }}<br>
+    total price: {{last.total_price}}$
+  </div>
+  <div class="message" id="new" *ngIf="new_user">
+    Welcome to your first purchase !
+  </div>
+</div>

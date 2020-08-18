@@ -1,0 +1,28 @@
+<div *ngIf="cart" class="cart_container" [style.height.px]="carts && carts.length>2 ? '400' : 'auto'">
+
+<div *ngFor="let c of carts" class="card mb-3 product_cart" style="max-width: 540px;" [class.selected]="c === selectedProduct">
+    <div class="row no-gutters cart_style">
+      <div class="col-md-4">
+        <img src={{c.img}} class="card-img" alt="...">
+      </div>
+      <div class="col-md-8 d-flex ">
+        <div class="card-body details">
+          <h5 class="card-title" [style.font-size.px]="c && c.product_name.length>6 ? '14' : 'auto' "> {{c.product_name}}</h5>
+          <p class="card-text">quantity: {{c.amount}}</p>
+          <p  class="card-text">price:{{c.total_price}}$</p>
+        </div>
+        <div class="card-body btn" (click)="deleteProduct(c)"><b>X</b></div>
+      </div>
+    </div>
+  </div>
+
+  <h5>Total Price: {{totalPrice}}$</h5>
+
+  <button  id="order" routerLink="/categories" type="button" class="btn btn-primary btn-lg" routerLink="/order">Order now</button>
+
+  <button id="clear" routerLink="/categories" type="button" class="btn btn-primary btn-lg" (click)="clear()">Clear Cart</button>
+
+</div>
+<div *ngIf="!cart" class="empty">
+  <h5 id="empty">Your shopping cart is empty.</h5>
+</div>

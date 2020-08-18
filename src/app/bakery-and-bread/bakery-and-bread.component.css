@@ -1,0 +1,9 @@
+.container_products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card_product{
+    margin: 10px;
+}

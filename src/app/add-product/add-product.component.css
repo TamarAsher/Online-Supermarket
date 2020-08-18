@@ -1,0 +1,41 @@
+.add_container{
+    border: 2px solid rgb(119, 119, 119);
+    margin-left: 5px;
+    padding: 10px;
+    width: 300px;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+ #btnAdd{
+    background-color:rgb(119, 119, 119);
+    border: 1px solid rgb(119, 119, 119);
+}
+#btnAdd:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(173, 173, 173);
+}
+#btnAdd:hover{
+    background-color:rgb(173, 173, 173);;
+    border: 1px solid rgb(173, 173, 173);;
+}
+
+input:focus, select:focus{
+    outline: none;
+    box-shadow: none;
+    border: 2px solid rgb(197, 197, 197);
+}
+.span{
+    color: red;
+    font-weight: bold;
+}
+
+.content{
+    margin: 100px;
+}
+.margin25{
+    margin: 25px;
+}
+.upload{
+    cursor: pointer;
+}

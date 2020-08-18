@@ -1,0 +1,74 @@
+#nav{
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+#icon_name{
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Shadows Into Light Two', cursive; */
+    color: rgb(0, 0, 0);
+
+}
+#icon{
+    color: rgb(248, 171, 223);
+    font-size: 50px;
+    /* margin-right: 5px; */
+}
+#contact{
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+}
+#hello{
+    /* color:  rgb(248, 171, 223); */
+    font-size: 18px;
+}
+.container_all{
+    height: 100%;
+}
+#search_con{
+    display: flex;
+}
+#search{
+    margin-left: 10px;
+}
+
+#btnSearch{
+    background-color: rgb(248, 171, 223);
+    border: 1px solid rgb(248, 171, 223);
+    color: white;
+ }
+#btnSearch:focus{
+     outline: none;
+     box-shadow: none;
+     border: 1px solid rgb(248, 171, 223);
+  }
+#btnSearch:hover{
+     background-color: #f5cae7;
+     border: 1px solid #ffe9f8;
+  }
+#inputSearch:focus{
+    outline: none;
+    box-shadow: none;
+}
+#btnLogout{
+    padding: 1px;
+    font-size: 15px;
+    background-color: rgb(248, 171, 223);
+    border: 1px solid rgb(248, 171, 223);
+    color: white;
+}
+#btnLogout:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(248, 171, 223);
+ }
+ #btnLogout:hover{
+    background-color: #f5cae7;
+    border: 1px solid #ffe9f8;
+ }
+ input:focus, select:focus{
+    outline: none;
+    box-shadow: none;
+    border: 2px solid rgb(197, 197, 197);
+}

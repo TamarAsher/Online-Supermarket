@@ -1,0 +1,8 @@
+<div mat-dialog-content>
+  <h3>Your purchase was made successfully!</h3>
+
+   <div>click <a (click)="onClick()" [href]="fileUrl" download="receipt.txt">Here</a> to download receipt</div>
+<div class="modal-footer">
+    <button type="button" id="btn" mat-button class="btn btn-primary" (click)="onNoClick()" cdkFocusInitial>OK</button>
+</div>
+</div>
